@@ -69,6 +69,7 @@
 
         <form method="post" action="" class="results">
             {% csrf_token %}
+            <input type="submit" class="default" name="_next" value="{% trans "Save and translate next block" %}" tabindex="{% increment tab_idx %}"/>
             <table id="result_list">
                 <thead>
                     <tr>
